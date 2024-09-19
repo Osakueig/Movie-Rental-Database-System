@@ -152,7 +152,7 @@ CREATE TABLE address (
 	phone VARCHAR(12),
 	last_update TIMESTAMP
 );
-
+-- Populate tables
 INSERT INTO category (category_id, name) VALUES
 (1, 'Action'),
 (2, 'Comedy'),
@@ -238,7 +238,6 @@ INSERT INTO film (film_id, title, Film_Description, release_year, language_id, o
 (9, 'Jurassic Park', 'Dinosaurs run amok in a theme park.', '1993', 1, 1, 7, 3.99, 127, 19.99, 'PG-13', 'Making Of'),
 (10, 'Gladiator', 'A Roman general seeks revenge.', '2000', 1, 1, 7, 3.99, 155, 19.99, 'R', 'Commentary');
 
--- Insert into film_actor (excluding last_update)
 INSERT INTO film_actor (actor_id, film_id) VALUES
 (1, 1),
 (2, 2),
